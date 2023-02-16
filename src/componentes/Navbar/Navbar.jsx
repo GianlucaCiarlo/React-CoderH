@@ -1,24 +1,27 @@
 import "./NavbarStyles.css"
-import CardWidget from "../CardWidget/CardWidget"
+import { Link } from "react-router-dom"
+
 
 
 const Navbar = () => {
     return (
         <nav>
             <div>
-                <ul id="navbar">
-                    <li><a className="active" href="../../../public/index.html">Inicio</a></li>
-                    <li><a href="../../../public/index.html">Promociones</a></li>
-                    <li><a href="../../../public/index.html">Productos</a></li>
-                    <li><a href="../../../public/index.html">Como comprar</a></li>
-                    <li><a href="../../../public/index.html">Quienes somos?</a></li>
-                    <li><a href="../../../public/index.html">Contacto</a></li>
-                    <CardWidget />
-                </ul>
-                
-            </div>
+                <Link to="/" ><img src="https://res.cloudinary.com/drfhxh99i/image/upload/v1676432360/logoheader_bgmj2s.png" alt="" /></Link>
 
-        </nav>
+                <ul id="navbar">
+                    <Link to=""><li><h2>Inicio</h2></li></Link>
+                    <Link to="/category/cervezas"><li><h2>Cervezas</h2></li></Link>
+                <Link to="/category/gaseosas"><li><h2>Gaseosas</h2></li></Link>
+                {/* <Link to=""><li><h2>Como comprar</h2></li></Link>
+                <Link to=""><li> <h2>Quienes somos?</h2></li></Link>
+                <Link to=""><li><h2> Contacto</h2></li></Link> */}
+
+            </ul>
+
+        </div>
+
+        </nav >
     )
 }
 

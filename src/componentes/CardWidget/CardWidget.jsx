@@ -1,12 +1,24 @@
+
+
+import { Link } from 'react-router-dom';
 import { BsMinecart } from 'react-icons/bs';
-const CardWidget = ()=>{
-    return(
+import "./CardWidget.css"
+
+
+const CardWidget = () => {
+    return (
         <div>
-            <h2>0</h2>
-            <BsMinecart />
-            
-            
-           
+
+            <Link to="/cart" >
+                <div className='Contador'>
+                    <span>7</span>
+                    <BsMinecart />
+                </div>
+                
+            </Link>
+
+
+
         </div>
     )
 }

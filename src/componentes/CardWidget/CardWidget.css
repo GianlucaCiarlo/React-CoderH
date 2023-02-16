@@ -1,0 +1,7 @@
+.Contador{
+    font-size: 20px;
+    color: red;
+    display: flex;
+    justify-content:right;
+    padding: 100px;
+}

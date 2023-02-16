@@ -1,11 +1,15 @@
 nav{
+    background-color:whitesmoke;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
     background-color: whitesmoke;
     padding: 20px 80px;
     box-shadow:  0 5px 15px rgba(0, 0, 0, 0.10);
-}
+    height: auto;
+    width: auto;
+    
+    }
 #navbar{ display: flex;
     align-items: center;
     justify-content: center;
@@ -16,22 +20,14 @@ nav{
     padding: 0 20px;
     position: relative;
 }
-#navbar li a{
+#navbar li {
     text-decoration: none;
     font-size:  16px;
     font-weight: 500;
     color: blue;
     transition: 0.3s ease-in-out;
 }
-#navbar li a:hover{
+#navbar li :hover{
     color: red;
 }
-#navbar li a::after{
-    content: "";
-    width: 30%;
-    height: 2px;
-    background-color: red;
-    position: absolute;
-    bottom: -4px ;
-    left: 20px;
-}
+

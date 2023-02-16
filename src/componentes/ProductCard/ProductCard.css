@@ -1,0 +1,30 @@
+
+  
+  .itemContainer {
+      display: grid;
+      gap: 1rem;
+      max-width: 60rem;
+      margin: 60px auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 30%;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: rgba(4, 0, 253, 0.534) 0px 5px 15px 0px;
+      
+  }
+  h4{
+      line-height: 1.8;
+  }
+  .imgProducto{
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+  }
+  .itemContainer:hover {
+      box-shadow: rgba(4, 0, 253, 0.534) 0px 5px 15px 0px;
+      transform: translateY(-3%);
+  }
+  
+  
